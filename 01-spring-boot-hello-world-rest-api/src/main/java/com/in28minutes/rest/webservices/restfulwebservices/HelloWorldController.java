@@ -17,6 +17,11 @@ public class HelloWorldController {
 		return "Bye Giri";
 	}
 
+	@GetMapping(path = "/with-debug")
+	public String withDebug() {
+		return "Is it a break";
+	}
+
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
 		//throw new RuntimeException("Some Error has Happened! Contact Support at ***-***");
